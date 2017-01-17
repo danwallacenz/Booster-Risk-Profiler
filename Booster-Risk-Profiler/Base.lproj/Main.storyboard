@@ -160,7 +160,7 @@
         <!--Capital Guaranteed Fund-->
         <scene sceneID="fxw-8m-Z1g">
             <objects>
-                <viewController title="Capital Guaranteed Fund" id="Xgn-Da-MIJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CapitalGuaranteedFund" title="Capital Guaranteed Fund" id="Xgn-Da-MIJ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Anh-c7-7z2"/>
                         <viewControllerLayoutGuide type="bottom" id="PqX-2r-EsX"/>
@@ -331,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Dv-ik-UJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337849" y="-77743"/>
+            <point key="canvasLocation" x="-339368" y="-77953"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Kt-Ld-r0T">
@@ -354,15 +354,24 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmv-UI-pD6">
                                 <rect key="frame" x="16" y="89" width="288" height="216"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLt-sU-8Ec">
+                                <rect key="frame" x="261" y="442" width="41" height="30"/>
+                                <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="finish:" destination="CNC-P0-EFa" eventType="touchUpInside" id="Gu7-JZ-JCq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.90588235289999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="mn9-b1-DiV" firstAttribute="top" secondItem="VLt-sU-8Ec" secondAttribute="bottom" constant="8" id="JoU-SN-B8a"/>
                             <constraint firstItem="9Mu-xo-Fxi" firstAttribute="top" secondItem="MMC-Xn-aBk" secondAttribute="bottom" constant="20" id="P19-07-I0d"/>
                             <constraint firstItem="Hmv-UI-pD6" firstAttribute="top" secondItem="9Mu-xo-Fxi" secondAttribute="bottom" constant="8" symbolic="YES" id="UxK-HQ-jXY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Mu-xo-Fxi" secondAttribute="trailing" id="ZXc-Nt-WtV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hmv-UI-pD6" secondAttribute="trailing" id="eSA-Xc-cbf"/>
                             <constraint firstItem="Hmv-UI-pD6" firstAttribute="leading" secondItem="CnW-GP-uYK" secondAttribute="leadingMargin" id="iMV-UB-eGh"/>
                             <constraint firstAttribute="leadingMargin" secondItem="9Mu-xo-Fxi" secondAttribute="leading" id="ph4-D4-D1i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VLt-sU-8Ec" secondAttribute="trailing" constant="2" id="znp-o7-6dg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -371,7 +380,89 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-fm-g9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337146" y="-77744"/>
+            <point key="canvasLocation" x="-338664" y="-77954"/>
+        </scene>
+        <!--Investor Type-->
+        <scene sceneID="OWZ-Em-4Jt">
+            <objects>
+                <viewController storyboardIdentifier="QuestionnaireResultViewController" id="2ck-Ir-HVl" customClass="QuestionnaireResultViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ha-H3-HG1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sak-Rb-uYh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xkk-Pe-ho0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf3-u8-GwO">
+                                <rect key="frame" x="166" y="189.5" width="67.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your total score is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjV-7n-f0v">
+                                <rect key="frame" x="16" y="230" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are a " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWo-Is-jGY">
+                                <rect key="frame" x="16" y="259" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-be-hmT">
+                                <rect key="frame" x="91" y="255" width="76" height="30"/>
+                                <state key="normal" title="&quot;balanced&quot;"/>
+                                <connections>
+                                    <action selector="showInvestorType:" destination="2ck-Ir-HVl" eventType="touchUpInside" id="XdC-R0-YFc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="investor." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDn-9J-D0P">
+                                <rect key="frame" x="167" y="259" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gf3-u8-GwO" firstAttribute="leading" secondItem="OjV-7n-f0v" secondAttribute="trailing" constant="8" id="366-BD-A7z"/>
+                            <constraint firstItem="aiI-be-hmT" firstAttribute="leading" secondItem="nWo-Is-jGY" secondAttribute="trailing" id="5Fs-Bk-V5r"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="nWo-Is-jGY" secondAttribute="leading" id="J8F-se-fJ8"/>
+                            <constraint firstItem="nWo-Is-jGY" firstAttribute="top" secondItem="OjV-7n-f0v" secondAttribute="bottom" constant="8" id="OAb-sm-vZY"/>
+                            <constraint firstItem="fDn-9J-D0P" firstAttribute="baseline" secondItem="aiI-be-hmT" secondAttribute="baseline" id="PrK-ZY-ovw"/>
+                            <constraint firstItem="aiI-be-hmT" firstAttribute="baseline" secondItem="nWo-Is-jGY" secondAttribute="baseline" id="Vrd-I1-3Kn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OjV-7n-f0v" secondAttribute="leading" id="fjV-TA-rgs"/>
+                            <constraint firstItem="fDn-9J-D0P" firstAttribute="leading" secondItem="aiI-be-hmT" secondAttribute="trailing" id="gbn-00-seC"/>
+                            <constraint firstItem="gf3-u8-GwO" firstAttribute="baseline" secondItem="OjV-7n-f0v" secondAttribute="baseline" id="hCS-Ns-PQr"/>
+                            <constraint firstItem="OjV-7n-f0v" firstAttribute="centerY" secondItem="Xkk-Pe-ho0" secondAttribute="centerY" id="qBR-hf-3o5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Investor Type" id="P4q-IJ-tPH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPZ-FP-xXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335407.5" y="-77745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qn9-5x-Gcl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wow-ZX-R76" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cod-8e-vls">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2ck-Ir-HVl" kind="relationship" relationship="rootViewController" id="3wI-Q7-k5n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cT-qZ-TLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-336172.5" y="-77745"/>
         </scene>
     </scenes>
     <resources>

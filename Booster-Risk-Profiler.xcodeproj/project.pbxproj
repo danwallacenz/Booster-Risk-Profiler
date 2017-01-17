@@ -17,6 +17,7 @@
 		3CCF25921E2DE3D700308FFE /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF25911E2DE3D700308FFE /* QuestionnaireViewController.swift */; };
 		3CCF25971E2DF9B700308FFE /* Q2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF25961E2DF9B700308FFE /* Q2ViewController.swift */; };
 		3CCF25991E2E093500308FFE /* Q4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF25981E2E093500308FFE /* Q4ViewController.swift */; };
+		3CCF259B1E2E125900308FFE /* QuestionnaireResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF259A1E2E125900308FFE /* QuestionnaireResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3CCF25911E2DE3D700308FFE /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		3CCF25961E2DF9B700308FFE /* Q2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q2ViewController.swift; sourceTree = "<group>"; };
 		3CCF25981E2E093500308FFE /* Q4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q4ViewController.swift; sourceTree = "<group>"; };
+		3CCF259A1E2E125900308FFE /* QuestionnaireResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				3CCF25911E2DE3D700308FFE /* QuestionnaireViewController.swift */,
 				3CCF25961E2DF9B700308FFE /* Q2ViewController.swift */,
 				3CCF25981E2E093500308FFE /* Q4ViewController.swift */,
+				3CCF259A1E2E125900308FFE /* QuestionnaireResultViewController.swift */,
 			);
 			name = questionnaire;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCF259B1E2E125900308FFE /* QuestionnaireResultViewController.swift in Sources */,
 				3C0FE5EA1E2D957A000B1080 /* WelcomeViewController.swift in Sources */,
 				3C0FE60A1E2DA034000B1080 /* MenuViewController.swift in Sources */,
 				3CCF25991E2E093500308FFE /* Q4ViewController.swift in Sources */,

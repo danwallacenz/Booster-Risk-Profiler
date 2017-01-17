@@ -18,6 +18,18 @@ class Q4ViewController: UIViewController {
         answerPicker.dataSource = self
         answerPicker.delegate = self
     }
+    
+    @IBAction func finish(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "QuestionnaireResultViewController")
+        
+        if let parent = parent, let navVC = parent.navigationController {
+            print(parent)
+            print()
+            navVC.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 extension Q4ViewController: UIPickerViewDelegate {
@@ -25,13 +37,6 @@ extension Q4ViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         var title = "NOT SET"
-        
-//        Daily 1 1 1
-//        Monthly 3 3 3
-//        Quarterly 5 5 5
-//        Annually 7 7 7
-//        Never or only occasionally over the longer term 10 10 10
-        
         switch component {
         case 0:
             switch row {
