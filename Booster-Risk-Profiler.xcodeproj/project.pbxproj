@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3C0FE5E81E2D957A000B1080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE5E71E2D957A000B1080 /* AppDelegate.swift */; };
-		3C0FE5EA1E2D957A000B1080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE5E91E2D957A000B1080 /* ViewController.swift */; };
+		3C0FE5EA1E2D957A000B1080 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE5E91E2D957A000B1080 /* WelcomeViewController.swift */; };
 		3C0FE5ED1E2D957A000B1080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FE5EB1E2D957A000B1080 /* Main.storyboard */; };
 		3C0FE5EF1E2D957A000B1080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FE5EE1E2D957A000B1080 /* Assets.xcassets */; };
 		3C0FE5F21E2D957A000B1080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FE5F01E2D957A000B1080 /* LaunchScreen.storyboard */; };
 		3C0FE5FD1E2D957A000B1080 /* Booster_Risk_ProfilerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE5FC1E2D957A000B1080 /* Booster_Risk_ProfilerTests.swift */; };
+		3C0FE60A1E2DA034000B1080 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE6091E2DA034000B1080 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		3C0FE5E41E2D957A000B1080 /* Booster-Risk-Profiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booster-Risk-Profiler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0FE5E71E2D957A000B1080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C0FE5E91E2D957A000B1080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C0FE5E91E2D957A000B1080 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3C0FE5EC1E2D957A000B1080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C0FE5EE1E2D957A000B1080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0FE5F11E2D957A000B1080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		3C0FE5F81E2D957A000B1080 /* Booster-Risk-ProfilerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booster-Risk-ProfilerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0FE5FC1E2D957A000B1080 /* Booster_Risk_ProfilerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booster_Risk_ProfilerTests.swift; sourceTree = "<group>"; };
 		3C0FE5FE1E2D957A000B1080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0FE6091E2DA034000B1080 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				3C0FE5E71E2D957A000B1080 /* AppDelegate.swift */,
-				3C0FE5E91E2D957A000B1080 /* ViewController.swift */,
+				3C0FE5E91E2D957A000B1080 /* WelcomeViewController.swift */,
 				3C0FE5EB1E2D957A000B1080 /* Main.storyboard */,
 				3C0FE5EE1E2D957A000B1080 /* Assets.xcassets */,
 				3C0FE5F01E2D957A000B1080 /* LaunchScreen.storyboard */,
 				3C0FE5F31E2D957A000B1080 /* Info.plist */,
+				3C0FE6091E2DA034000B1080 /* MenuViewController.swift */,
 			);
 			path = "Booster-Risk-Profiler";
 			sourceTree = "<group>";
@@ -201,7 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C0FE5EA1E2D957A000B1080 /* ViewController.swift in Sources */,
+				3C0FE5EA1E2D957A000B1080 /* WelcomeViewController.swift in Sources */,
+				3C0FE60A1E2DA034000B1080 /* MenuViewController.swift in Sources */,
 				3C0FE5E81E2D957A000B1080 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				3C0FE6031E2D957A000B1080 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C0FE6041E2D957A000B1080 /* Build configuration list for PBXNativeTarget "Booster-Risk-ProfilerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				3C0FE6061E2D957A000B1080 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
