@@ -9,7 +9,18 @@
 import UIKit
 
 class QuestionnaireResultViewController: UIViewController {
+    @IBOutlet weak var scoreLabel: UILabel! {
+        didSet {
+            scoreLabel.text = String(score)
+        }
+    }
 
+    var score:Int = 0 {
+        didSet {
+            scoreLabel?.text = String(score)
+        }
+    }
+    
     @IBAction func showInvestorType(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CapitalGuaranteedFund")

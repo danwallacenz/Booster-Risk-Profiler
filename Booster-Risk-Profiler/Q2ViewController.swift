@@ -8,8 +8,10 @@
 
 import UIKit
 
-class Q2ViewController: UIViewController {
+class Q2ViewController: UIViewController, Scorable {
 
+    open var score = 0
+    
     @IBOutlet weak var answerPicker: UIPickerView!
     
     override func viewDidLoad() {
@@ -53,6 +55,28 @@ extension Q2ViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("selected row \(row)")
+        switch component {
+        case 0:
+            switch row {
+            case 0:
+                score = 0
+            case 1:
+                score = 1
+            case 2:
+                score = 3
+            case 3:
+                score = 5
+            case 4:
+                score = 7
+            case 5:
+                score = 10
+            default:
+                score = 0
+            }
+        default:
+            break
+        }
+        print("score is \(score)")
     }
 }
 

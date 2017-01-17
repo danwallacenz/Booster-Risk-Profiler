@@ -8,8 +8,10 @@
 
 import UIKit
 
-class Q4ViewController: UIViewController {
+class Q4ViewController: UIViewController, Scorable {
 
+    open var score = 0
+    
     @IBOutlet weak var answerPicker: UIPickerView!
     
     override func viewDidLoad() {
@@ -22,12 +24,11 @@ class Q4ViewController: UIViewController {
     @IBAction func finish(_ sender: UIButton) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "QuestionnaireResultViewController")
-        
-        if let parent = parent, let navVC = parent.navigationController {
-            print(parent)
-            print()
-            navVC.pushViewController(vc, animated: true)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "QuestionnaireResultViewController") as? QuestionnaireResultViewController,
+            let parent = parent as? QuestionnaireViewController,
+            let navVC = parent.navigationController {
+                navVC.pushViewController(vc, animated: true)
+                vc.score = parent.score()
         }
     }
 }
@@ -59,14 +60,34 @@ extension Q4ViewController: UIPickerViewDelegate {
             break
         }
         return title
-        
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("selected row \(row)")
+
+        switch component {
+        case 0:
+            switch row {
+            case 0:
+                score = 0
+            case 1:
+                score = 1
+            case 2:
+                score = 3
+            case 3:
+                score = 5
+            case 4:
+                score = 7
+            case 5:
+                score = 10
+            default:
+                score = 0
+            }
+        default:
+            break
+        }
+        print("score is \(score)")
     }
 }
-
 
 extension Q4ViewController:UIPickerViewDataSource {
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {

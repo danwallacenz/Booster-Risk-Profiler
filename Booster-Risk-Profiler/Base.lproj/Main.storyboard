@@ -65,7 +65,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C5T-Ep-4OP" id="Nho-XD-URt">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application helps you find out what type of investor you are." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wa-a2-RwR">
@@ -91,7 +91,7 @@
                                         <rect key="frame" x="0.0" y="116" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kNv-QY-ezJ" id="dXT-SL-Ovu">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defensive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adD-xR-PuS">
@@ -120,7 +120,7 @@
                                         <rect key="frame" x="0.0" y="188" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jf6-Ls-sxw" id="eAc-9G-oFZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try it..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B7-At-jFi">
@@ -147,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cN-XL-KJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338663" y="-79498"/>
+            <point key="canvasLocation" x="-338784" y="-79498"/>
         </scene>
         <!--Questionnaire-->
         <scene sceneID="2hf-PL-3HX">
@@ -155,7 +155,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" title="Questionnaire" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UmF-0a-9Bf" customClass="QuestionnaireViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdN-ro-2eA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338664" y="-78669"/>
+            <point key="canvasLocation" x="-338784" y="-78692"/>
         </scene>
         <!--Capital Guaranteed Fund-->
         <scene sceneID="fxw-8m-Z1g">
@@ -272,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbB-mh-OV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337765.3125" y="-79386.25"/>
+            <point key="canvasLocation" x="-338111" y="-79498"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ghB-Gy-Jib">
@@ -291,7 +291,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXG-6z-saN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-340175" y="-79498"/>
+            <point key="canvasLocation" x="-339842" y="-79498"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6gL-MN-APx">
@@ -380,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-fm-g9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338664" y="-77954"/>
+            <point key="canvasLocation" x="-338784" y="-77953"/>
         </scene>
         <!--Investor Type-->
         <scene sceneID="OWZ-Em-4Jt">
@@ -441,28 +441,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Investor Type" id="P4q-IJ-tPH"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="gf3-u8-GwO" id="J51-EF-TgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPZ-FP-xXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335407.5" y="-77745"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qn9-5x-Gcl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wow-ZX-R76" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cod-8e-vls">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2ck-Ir-HVl" kind="relationship" relationship="rootViewController" id="3wI-Q7-k5n"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7cT-qZ-TLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-336172.5" y="-77745"/>
+            <point key="canvasLocation" x="-339368" y="-78692"/>
         </scene>
     </scenes>
     <resources>

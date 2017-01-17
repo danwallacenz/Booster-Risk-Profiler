@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol Scorable {
+    var score:Int { get }
+}
+
 class QuestionnaireViewController: UIPageViewController {
 
     private(set) lazy var orderedViewControllers: [UIViewController] = {
@@ -17,6 +21,10 @@ class QuestionnaireViewController: UIPageViewController {
         return [vc2, vc4]
     }()
 
+    func score() -> Int {
+        return orderedViewControllers.flatMap{ $0 as? Scorable }.reduce(0){ $0 + $1.score }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
