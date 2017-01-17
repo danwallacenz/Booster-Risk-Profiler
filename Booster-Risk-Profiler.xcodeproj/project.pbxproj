@@ -14,6 +14,9 @@
 		3C0FE5F21E2D957A000B1080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FE5F01E2D957A000B1080 /* LaunchScreen.storyboard */; };
 		3C0FE5FD1E2D957A000B1080 /* Booster_Risk_ProfilerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE5FC1E2D957A000B1080 /* Booster_Risk_ProfilerTests.swift */; };
 		3C0FE60A1E2DA034000B1080 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FE6091E2DA034000B1080 /* MenuViewController.swift */; };
+		3CCF25921E2DE3D700308FFE /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF25911E2DE3D700308FFE /* QuestionnaireViewController.swift */; };
+		3CCF25971E2DF9B700308FFE /* Q2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF25961E2DF9B700308FFE /* Q2ViewController.swift */; };
+		3CCF25991E2E093500308FFE /* Q4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF25981E2E093500308FFE /* Q4ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		3C0FE5FC1E2D957A000B1080 /* Booster_Risk_ProfilerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booster_Risk_ProfilerTests.swift; sourceTree = "<group>"; };
 		3C0FE5FE1E2D957A000B1080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C0FE6091E2DA034000B1080 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3CCF25911E2DE3D700308FFE /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
+		3CCF25961E2DF9B700308FFE /* Q2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q2ViewController.swift; sourceTree = "<group>"; };
+		3CCF25981E2E093500308FFE /* Q4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q4ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		3C0FE5E61E2D957A000B1080 /* Booster-Risk-Profiler */ = {
 			isa = PBXGroup;
 			children = (
+				3CCF25931E2DE52200308FFE /* questionnaire */,
 				3C0FE5E71E2D957A000B1080 /* AppDelegate.swift */,
 				3C0FE5E91E2D957A000B1080 /* WelcomeViewController.swift */,
 				3C0FE5EB1E2D957A000B1080 /* Main.storyboard */,
@@ -97,6 +104,16 @@
 				3C0FE5FE1E2D957A000B1080 /* Info.plist */,
 			);
 			path = "Booster-Risk-ProfilerTests";
+			sourceTree = "<group>";
+		};
+		3CCF25931E2DE52200308FFE /* questionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				3CCF25911E2DE3D700308FFE /* QuestionnaireViewController.swift */,
+				3CCF25961E2DF9B700308FFE /* Q2ViewController.swift */,
+				3CCF25981E2E093500308FFE /* Q4ViewController.swift */,
+			);
+			name = questionnaire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +223,9 @@
 			files = (
 				3C0FE5EA1E2D957A000B1080 /* WelcomeViewController.swift in Sources */,
 				3C0FE60A1E2DA034000B1080 /* MenuViewController.swift in Sources */,
+				3CCF25991E2E093500308FFE /* Q4ViewController.swift in Sources */,
+				3CCF25971E2DF9B700308FFE /* Q2ViewController.swift in Sources */,
+				3CCF25921E2DE3D700308FFE /* QuestionnaireViewController.swift in Sources */,
 				3C0FE5E81E2D957A000B1080 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-339391" y="-79498"/>
         </scene>
-        <!--Investment  Types-->
+        <!--Investments-->
         <scene sceneID="cqZ-f2-U44">
             <objects>
-                <tableViewController title="Investment  Types" id="0hX-aI-a3B" customClass="MenuViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Investments" id="0hX-aI-a3B" customClass="MenuViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ElO-8r-5a7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +68,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application help you find out what type of investor you are." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wa-a2-RwR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application helps you find out what type of investor you are." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wa-a2-RwR">
                                                     <rect key="frame" x="8" y="8" width="304" height="43.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -133,6 +132,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="UmF-0a-9Bf" kind="show" id="4qq-qX-iqp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -147,61 +149,13 @@
             </objects>
             <point key="canvasLocation" x="-338663" y="-79498"/>
         </scene>
-        <!--Capital Guaranteed Fund-->
-        <scene sceneID="179-aJ-afV">
+        <!--Questionnaire-->
+        <scene sceneID="2hf-PL-3HX">
             <objects>
-                <viewController title="Capital Guaranteed Fund" id="QfU-oi-4VP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RMx-Gf-7SW"/>
-                        <viewControllerLayoutGuide type="bottom" id="woP-28-ZfO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mdG-rY-kPn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfw-sz-iIm">
-                                <rect key="frame" x="16" y="57" width="288" height="191.5"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.37224727349999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text"> • The fund aims to provide relatively consistent returns, subject to a capital guarantee.
-
-• It aims to achieve returns – after fees but before tax – of at least 1.5% per year above inflation over any 2-year period.
-
-• Generally, there may be small movements up and down in the value of the fund. 
-
-• The fund invests mainly in income assets, and includes only a small amount of growth assets. </string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investment objective and strategy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wM0-RA-UsI">
-                                <rect key="frame" x="16" y="28" width="271.5" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capitalGuaranteedFund" translatesAutoresizingMaskIntoConstraints="NO" id="HuI-ii-Hyb">
-                                <rect key="frame" x="16" y="256.5" width="288" height="215.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="HuI-ii-Hyb" secondAttribute="height" multiplier="1:0.75" id="L4K-SM-XEY"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="HuI-ii-Hyb" secondAttribute="trailing" id="7hB-hK-nFz"/>
-                            <constraint firstItem="woP-28-ZfO" firstAttribute="top" secondItem="HuI-ii-Hyb" secondAttribute="bottom" constant="8" symbolic="YES" id="Fax-tI-MaM"/>
-                            <constraint firstItem="wM0-RA-UsI" firstAttribute="top" secondItem="RMx-Gf-7SW" secondAttribute="bottom" constant="8" id="HCw-zO-o56"/>
-                            <constraint firstItem="HuI-ii-Hyb" firstAttribute="leading" secondItem="mdG-rY-kPn" secondAttribute="leadingMargin" id="M04-d8-MSe"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="wM0-RA-UsI" secondAttribute="leading" id="QjD-zt-SP9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wfw-sz-iIm" secondAttribute="trailing" id="dnG-QD-mwO"/>
-                            <constraint firstItem="wfw-sz-iIm" firstAttribute="leading" secondItem="mdG-rY-kPn" secondAttribute="leadingMargin" id="gLq-Bf-tG1"/>
-                            <constraint firstItem="HuI-ii-Hyb" firstAttribute="top" secondItem="wfw-sz-iIm" secondAttribute="bottom" constant="8" symbolic="YES" id="uHW-i7-U7l"/>
-                            <constraint firstItem="wfw-sz-iIm" firstAttribute="top" secondItem="wM0-RA-UsI" secondAttribute="bottom" constant="8" symbolic="YES" id="wDK-0H-keR"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aGE-vm-Ctn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Questionnaire" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UmF-0a-9Bf" customClass="QuestionnaireViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdN-ro-2eA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338663" y="-78823"/>
+            <point key="canvasLocation" x="-338664" y="-78669"/>
         </scene>
         <!--Capital Guaranteed Fund-->
         <scene sceneID="fxw-8m-Z1g">
@@ -338,6 +292,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXG-6z-saN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-340175" y="-79498"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6gL-MN-APx">
+            <objects>
+                <viewController storyboardIdentifier="Q2ViewController" id="EjY-cL-PjN" customClass="Q2ViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Gv-Zp-uwt"/>
+                        <viewControllerLayoutGuide type="bottom" id="TLM-Hm-fJg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2QN-xD-cIY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protecting my investment portfolio from a fall in value at any time is more important to me than achieving high returns?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJh-X5-PYG">
+                                <rect key="frame" x="16" y="40" width="288" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiA-78-CFS">
+                                <rect key="frame" x="16" y="129" width="288" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.90588235289999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KiA-78-CFS" secondAttribute="trailing" id="3kd-Ml-R2F"/>
+                            <constraint firstItem="IJh-X5-PYG" firstAttribute="top" secondItem="9Gv-Zp-uwt" secondAttribute="bottom" constant="20" id="Atq-65-ceJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IJh-X5-PYG" secondAttribute="trailing" id="Lu5-r4-ItY"/>
+                            <constraint firstItem="KiA-78-CFS" firstAttribute="top" secondItem="IJh-X5-PYG" secondAttribute="bottom" constant="8" symbolic="YES" id="hFH-Di-Zgq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IJh-X5-PYG" secondAttribute="leading" id="iPP-GZ-4Oj"/>
+                            <constraint firstItem="KiA-78-CFS" firstAttribute="leading" secondItem="2QN-xD-cIY" secondAttribute="leadingMargin" id="ia7-xE-7vV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerPicker" destination="KiA-78-CFS" id="XzE-PQ-lYM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Dv-ik-UJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337849" y="-77743"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Kt-Ld-r0T">
+            <objects>
+                <viewController storyboardIdentifier="Q4ViewController" id="CNC-P0-EFa" customClass="Q4ViewController" customModule="Booster_Risk_Profiler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MMC-Xn-aBk"/>
+                        <viewControllerLayoutGuide type="bottom" id="mn9-b1-DiV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CnW-GP-uYK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often would you tend to worry about your investment returns?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-xo-Fxi">
+                                <rect key="frame" x="16" y="40" width="288" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmv-UI-pD6">
+                                <rect key="frame" x="16" y="89" width="288" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.90588235289999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Mu-xo-Fxi" firstAttribute="top" secondItem="MMC-Xn-aBk" secondAttribute="bottom" constant="20" id="P19-07-I0d"/>
+                            <constraint firstItem="Hmv-UI-pD6" firstAttribute="top" secondItem="9Mu-xo-Fxi" secondAttribute="bottom" constant="8" symbolic="YES" id="UxK-HQ-jXY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Mu-xo-Fxi" secondAttribute="trailing" id="ZXc-Nt-WtV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hmv-UI-pD6" secondAttribute="trailing" id="eSA-Xc-cbf"/>
+                            <constraint firstItem="Hmv-UI-pD6" firstAttribute="leading" secondItem="CnW-GP-uYK" secondAttribute="leadingMargin" id="iMV-UB-eGh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9Mu-xo-Fxi" secondAttribute="leading" id="ph4-D4-D1i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerPicker" destination="Hmv-UI-pD6" id="4A5-cC-8HI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-fm-g9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337146" y="-77744"/>
         </scene>
     </scenes>
     <resources>
