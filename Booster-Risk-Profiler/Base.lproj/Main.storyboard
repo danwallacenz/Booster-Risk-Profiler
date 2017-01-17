@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-339391" y="-79498"/>
+            <point key="canvasLocation" x="-339656" y="-79499"/>
         </scene>
         <!--Investments-->
         <scene sceneID="cqZ-f2-U44">
@@ -272,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbB-mh-OV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338111" y="-79498"/>
+            <point key="canvasLocation" x="-337955" y="-79500"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ghB-Gy-Jib">
@@ -291,7 +291,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXG-6z-saN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-339842" y="-79498"/>
+            <point key="canvasLocation" x="-340731" y="-79500"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6gL-MN-APx">
@@ -331,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Dv-ik-UJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-339368" y="-77953"/>
+            <point key="canvasLocation" x="-339656" y="-77954"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Kt-Ld-r0T">
@@ -376,11 +376,12 @@
                     </view>
                     <connections>
                         <outlet property="answerPicker" destination="Hmv-UI-pD6" id="4A5-cC-8HI"/>
+                        <outlet property="finishButton" destination="VLt-sU-8Ec" id="2Cy-4h-rhB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-fm-g9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338784" y="-77953"/>
+            <point key="canvasLocation" x="-338784" y="-77955"/>
         </scene>
         <!--Investor Type-->
         <scene sceneID="OWZ-Em-4Jt">
@@ -413,14 +414,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-be-hmT">
-                                <rect key="frame" x="91" y="255" width="76" height="30"/>
-                                <state key="normal" title="&quot;balanced&quot;"/>
+                                <rect key="frame" x="91" y="255" width="70" height="30"/>
+                                <state key="normal" title="'balanced'"/>
                                 <connections>
                                     <action selector="showInvestorType:" destination="2ck-Ir-HVl" eventType="touchUpInside" id="XdC-R0-YFc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="investor." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDn-9J-D0P">
-                                <rect key="frame" x="167" y="259" width="65" height="21"/>
+                                <rect key="frame" x="165" y="259" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -435,19 +436,20 @@
                             <constraint firstItem="fDn-9J-D0P" firstAttribute="baseline" secondItem="aiI-be-hmT" secondAttribute="baseline" id="PrK-ZY-ovw"/>
                             <constraint firstItem="aiI-be-hmT" firstAttribute="baseline" secondItem="nWo-Is-jGY" secondAttribute="baseline" id="Vrd-I1-3Kn"/>
                             <constraint firstAttribute="leadingMargin" secondItem="OjV-7n-f0v" secondAttribute="leading" id="fjV-TA-rgs"/>
-                            <constraint firstItem="fDn-9J-D0P" firstAttribute="leading" secondItem="aiI-be-hmT" secondAttribute="trailing" id="gbn-00-seC"/>
+                            <constraint firstItem="fDn-9J-D0P" firstAttribute="leading" secondItem="aiI-be-hmT" secondAttribute="trailing" constant="4" id="gbn-00-seC"/>
                             <constraint firstItem="gf3-u8-GwO" firstAttribute="baseline" secondItem="OjV-7n-f0v" secondAttribute="baseline" id="hCS-Ns-PQr"/>
                             <constraint firstItem="OjV-7n-f0v" firstAttribute="centerY" secondItem="Xkk-Pe-ho0" secondAttribute="centerY" id="qBR-hf-3o5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Investor Type" id="P4q-IJ-tPH"/>
                     <connections>
+                        <outlet property="investorTypeButton" destination="aiI-be-hmT" id="vpT-yC-1Jp"/>
                         <outlet property="scoreLabel" destination="gf3-u8-GwO" id="J51-EF-TgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPZ-FP-xXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-339368" y="-78692"/>
+            <point key="canvasLocation" x="-339656" y="-78693"/>
         </scene>
     </scenes>
     <resources>

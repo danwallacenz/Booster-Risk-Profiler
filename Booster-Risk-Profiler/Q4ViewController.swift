@@ -12,6 +12,8 @@ class Q4ViewController: UIViewController, Scorable {
 
     open var score = 0
     
+    @IBOutlet weak var finishButton: UIButton!
+    
     @IBOutlet weak var answerPicker: UIPickerView!
     
     override func viewDidLoad() {
@@ -19,6 +21,10 @@ class Q4ViewController: UIViewController, Scorable {
         
         answerPicker.dataSource = self
         answerPicker.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setFinishButtonState()
     }
     
     @IBAction func finish(_ sender: UIButton) {
@@ -29,6 +35,12 @@ class Q4ViewController: UIViewController, Scorable {
             let navVC = parent.navigationController {
                 navVC.pushViewController(vc, animated: true)
                 vc.score = parent.score()
+        }
+    }
+    
+    fileprivate func setFinishButtonState(){
+        if let parent = parent as? QuestionnaireViewController {
+            finishButton.isEnabled = parent.score() > 0 ? true : false
         }
     }
 }
@@ -86,6 +98,7 @@ extension Q4ViewController: UIPickerViewDelegate {
             break
         }
         print("score is \(score)")
+        setFinishButtonState()
     }
 }
 
